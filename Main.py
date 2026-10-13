@@ -7,6 +7,19 @@ def calc_subnet(cidr_input):
         #Check input and turn a host address into a network address
         network = ipaddress.ip_network(cidr_input, strict=False)
 
+        # Check if the user forgot to include the CIDR notation (the slash)
+        if '/' not in cidr_input:
+            raise ValueError("Missing CIDR notation. Please include a subnet mask (e.g., /24).")
+            # Continuous loop so the program goes back to asking for input when no CIDR was given
+    while True:
+        user_input = input("Enter a CIDR notation network (e.g., 10.0.0.0/16 or 192.168.1.50/24) or exit to leave: ").strip()
+        
+        # Allow the user to exit the loop
+        if user_input.lower() in ['exit']:
+            print("\nExiting Subnet Calculator.")
+            break
+            
+        calc_subnet(user_input)
         #Print the given address and show the Network Address,Broadcast Address,Subnet Mask,Wildcard Mask and Total IP addresses
         print("\n" + "-"*50)
         print(f"  SUBNET ANALYSIS FOR: {network}")
@@ -52,3 +65,4 @@ if __name__ == "__main__":
     print("\n--- Network Admin Subnet Calculator ---")
     user_input = input("Enter a CIDR notation network (e.g., 10.0.0.0/16 or 192.168.1.50/24): ").strip()
     calc_subnet(user_input)
+
