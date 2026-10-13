@@ -8,7 +8,7 @@
 * **Host Range Calculation:** Automatically determines the usable host range and total host count, with built-in safety handling for point-to-point (`/31` or `/32`) links.
 * **IP Version & Type Detection:** Identifies whether the network is IPv4 and flags it as a Private or Public address block.
 * **Interactive IP Checker:** Allows you to test multiple specific IP addresses against the calculated subnet without re-typing the network range.
-* **Robust Error Handling:** Validates CIDR notation formatting and catches invalid IP inputs gracefully.
+* **Error Handling:** Validates CIDR notation formatting and catches invalid IP inputs.
 
 ## Getting Started
 
