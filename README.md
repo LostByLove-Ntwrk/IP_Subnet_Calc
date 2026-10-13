@@ -12,14 +12,14 @@
 
 ## Getting Started
 
-# Prerequisites
-# Make sure you have **Python 3.x** installed on your machine. You can verify your installation by running:
+## Prerequisites
+### Make sure you have **Python 3.x** installed on your machine. You can verify your installation by running:
 python --version
 
-# Clone or download this repository to your local machine.
-# Open your terminal or command prompt inside the project folder.
-# Run the script:
+### Clone or download this repository to your local machine.
+### Open your terminal or command prompt inside the project folder.
+### Run the script:
 python Main.py
 
-# Follow the interactive prompts on the screen! 
-# Type new to switch subnets or exit to close the program.
+### Follow the interactive prompts on the screen! 
+### Type new to switch subnets or exit to close the program.
